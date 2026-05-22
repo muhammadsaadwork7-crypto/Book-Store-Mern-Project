@@ -1,3 +1,6 @@
+const dns = require("dns");
+dns.setServers(["1.1.1.1"]);   // Cloudflare DNS
+
 const express = require("express");
 const app = express();
 const cors = require("cors");
