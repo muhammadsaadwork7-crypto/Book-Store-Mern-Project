@@ -20,9 +20,11 @@ const UserOrderHistory = () => {
         setOrderHistory(response.data.data || []);
       } catch (error) {
         setOrderHistory([]);
+        console.error("Error fetching order history:", error);
       }
     };
     fetch();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [] );
   return (
     <>

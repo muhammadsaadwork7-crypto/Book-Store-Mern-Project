@@ -27,9 +27,11 @@ const AllOrders = () => {
         setAllOrders(response.data.data || []);
       } catch (error) {
         setAllOrders([]);
+        console.error("Error fetching orders:", error);
       }
     };
     fetch();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
   
   const change = (e) => {
@@ -47,6 +49,7 @@ const AllOrders = () => {
       alert(response.data.message);
     } catch (error) {
       alert("Unable to update order status");
+      console.error("Error updating order status:", error);
     }
   };
 

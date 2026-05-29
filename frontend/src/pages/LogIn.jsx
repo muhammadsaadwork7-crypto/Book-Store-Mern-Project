@@ -26,7 +26,7 @@ const LogIn = () => {
                 localStorage.setItem("id",response.data.id);
                 localStorage.setItem("token",response.data.token);
                 localStorage.setItem("role",response.data.role);
-                navigate("/Profile")
+                navigate("/Profile");
             }
         } catch (error) {
             alert(error.response.data.message);

@@ -63,7 +63,7 @@ const UpdateBook = () => {
       setData(response.data.data);
     };
     fetch();
-  }, [] );
+  }, [id] );
   return (
     <div className="bg-zinc-900 h-[100%] p-0 md:p-4">
         <h1 className=" text-3xl md:text-5xl font-semibold text-zinc-500 mb-8"> Update Book

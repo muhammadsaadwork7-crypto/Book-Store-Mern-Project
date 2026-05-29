@@ -21,7 +21,7 @@ const user = new mongoose.Schema({
     },
     avatar : {
         type : String,
-        default : "https://t3.ftcdn.net/jpg/06/33/54/78/360_F_633547842_AugYzexTpMJ9z1YcpTKUBoqBF0CUCk10.jpg",
+        default : "https://tse2.mm.bing.net/th/id/OIP.w8CMQKYqe7fVeq3oyfViMwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     },
     role : {
         type : String,

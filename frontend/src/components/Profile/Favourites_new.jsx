@@ -4,7 +4,7 @@ import BookCard from "../BookCard/BookCard";
 
 const Favourites = () => {
   const [favouriteBooks, setFavouriteBooks] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [Loading, setLoading] = useState(true);
   const headers = {
     id:localStorage.getItem("id"),
     authorization: `Bearer ${localStorage.getItem("token")}`, 
@@ -24,6 +24,7 @@ const Favourites = () => {
       }
     };
     fetchFavourites();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
   return (
     <>

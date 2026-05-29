@@ -25,9 +25,11 @@ const Settings = () => {
         setValue({ address:response.data.address});
       } catch (error) {
         setProfileData(null);
+        console.error("Error fetching user information:", error);
       }
     };
     fetch();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [] );
 
  const submitAddress = async () => {
@@ -39,6 +41,7 @@ const Settings = () => {
     alert(response.data.message);
   } catch (error) {
     alert("Unable to update address");
+    console.error("Error updating address:", error);
   }
  };
 

@@ -31,7 +31,7 @@ const App = () => {
             dispatch(authActions.Login());
             dispatch(authActions.changeRole(localStorage.getItem("role")));
         }
-    },[]);
+    }, [dispatch]);
     return (
     <div>
             <Navbar/>
